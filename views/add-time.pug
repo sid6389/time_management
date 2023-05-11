@@ -1,0 +1,25 @@
+form(method='post', action='/ticket/add-time')
+  .form-group
+    label(for='task') Task
+    select.form-control(name='task', id='task')
+      each task in tasks
+        option(value=task)= task
+  .form-group
+    label(for='subTask') Sub Task
+    select.form-control(name='subTask', id='subTask')
+      each subTask in subTasks
+        option(value=subTask)= subTask
+  .form-group
+    label(for='date') Date
+    input.form-control(type='date', name='date', id='date')
+  .form-group
+    label(for='hours') Hours
+    select.form-control(name='hours', id='hours')
+      each hour in [0, 1, 2, 3, 4, 5, 6, 7, 8]
+        option(value=hour)= hour
+  .form-group
+    label(for='minutes') Minutes
+    select.form-control(name='minutes', id='minutes')
+      each minute in ['00', '15', '30', '45']
+        option(value=minute)= minute
+  button.btn.btn-primary(type='submit') Submit

@@ -1,0 +1,19 @@
+{
+    "tasks": [
+      "Design",
+      "Development",
+      "Testing",
+      "Documentation"
+    ],
+    "subTasks": [
+      "Frontend",
+      "Backend",
+      "Integration",
+      "Unit Testing",
+      "Manual Testing",
+      "Bug Fixing",
+      "User Manuals",
+      "API Documentation"
+    ]
+  }
+  
